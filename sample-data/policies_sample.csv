@@ -1,0 +1,9 @@
+policy_id,policy_type,premium_amount,coverage_amount,start_date,end_date,customer_id
+,Term Life Insurance,15000,1500000,2024-01-01,2044-01-01,1
+,Health Insurance,25000,500000,2024-02-01,2025-02-01,2
+,Motor Insurance,12000,800000,2024-03-01,2025-03-01,3
+,Home Insurance,18000,2000000,2024-04-01,2025-04-01,4
+,Travel Insurance,5000,200000,2024-05-01,2024-11-01,5
+,Personal Accident,8000,1000000,2024-06-01,2025-06-01,6
+,Critical Illness,35000,2500000,2024-07-01,2025-07-01,7
+,Unit Linked Insurance Plan (ULIP),50000,3000000,2024-08-01,2034-08-01,8
