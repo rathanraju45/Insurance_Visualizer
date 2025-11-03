@@ -2,6 +2,16 @@
 
 A comprehensive full-stack application for Insurance Data Visualization with advanced authentication, role-based access control, and interactive dashboards using React, Node.js, and MySQL.
 
+## 🌐 Live Demo
+
+**🚀 [View Live Application](https://insurance-visualizer-frontend.onrender.com)**
+
+**Default Login Credentials:**
+- Username: `admin`
+- Password: `admin123`
+
+> ⚠️ **Note**: Free tier services may take 30-60 seconds to wake up on first access.
+
 ![Insurance Dashboard](client/assets/chola-ms2559.jpg)
 
 ## ✨ Key Features
