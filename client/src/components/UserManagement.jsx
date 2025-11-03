@@ -3,7 +3,7 @@ import { useAuth } from '../contexts/AuthContext';
 import Pagination from './Pagination';
 import ConfirmDialog from './ConfirmDialog';
 
-const API_BASE = 'http://localhost:3000/api';
+const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:3000/api';
 
 function UserManagement() {
   const { getAuthHeaders, hasPermission, user: currentUser } = useAuth();
