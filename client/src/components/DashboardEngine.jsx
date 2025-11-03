@@ -67,6 +67,13 @@ export default function DashboardEngine() {
     loadTables();
   }, []);
 
+  // Auto-select first dashboard for viewers
+  useEffect(() => {
+    if (!canCreate && dashboards.length > 0 && !selected) {
+      editDashboard(dashboards[0]);
+    }
+  }, [dashboards, canCreate, selected]);
+
   async function loadDashboards() {
     try {
       const r = await api.dashboards.list(1, 100);
@@ -276,7 +283,9 @@ export default function DashboardEngine() {
       <div className="db-sidebar">
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 16 }}>
           <h4 style={{ margin: 0 }}>📊 Dashboards</h4>
-          <button className="btn small primary" onClick={startNew}>➕ New</button>
+          {canCreate && (
+            <button className="btn small primary" onClick={startNew}>➕ New</button>
+          )}
         </div>
 
         <div className="db-table-list">
